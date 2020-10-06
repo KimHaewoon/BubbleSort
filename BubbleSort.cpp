@@ -4,9 +4,7 @@
 using namespace std;
 void swap(int *x, int *y)
 {
-	int temp = *x;
-	*x = *y;
-	*y = temp;
+	
 }
 
 void bubbleSort(int arr[], int size)
@@ -23,15 +21,7 @@ void bubbleSort(int arr[], int size)
 		
 	}
 }
-void print(int arr[], int size)
-{
-	cout << endl;
-	for (int i = 0; i < size; ++i)
-	{
-		cout << arr[i] << " ";
-	}
-	cout << endl;
-}
+
 
 
 int main()
@@ -39,11 +29,11 @@ int main()
 	int arr[] = { 64, 34, 25, 12, 22, 11, 90};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	cout << "Unsorted array: ";
-	print(arr, n);
+	//here
 	cout << endl;
 	bubbleSort(arr, n);
 	cout << "Sorted array: ";
-	print(arr, n);
+	//here
 
 	system("pause");
 	return 0;
